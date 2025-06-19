@@ -1,0 +1,97 @@
+
+:root {
+  --primary-color: #1a1f36;
+  --accent-color: #3b82f6;
+  --moon-color: #f1f5f9;
+  --star-color: #dbeafe;
+}
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: radial-gradient(circle at top, #0f172a 0%, #1e293b 100%);
+  color: var(--moon-color);
+  overflow-x: hidden;
+}
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: var(--star-color);
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--moon-color);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: var(--accent-color);
+}
+
+p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.project-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #334155;
+}
+
+.moon {
+  width: 100px;
+  height: 100px;
+  background: var(--moon-color);
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(241, 245, 249, 0.5);
+  margin: 2rem auto;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
