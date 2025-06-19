@@ -1,17 +1,18 @@
 :root {
-  --primary-color: #0d1f24;
-  --accent-color: #14b8a6;
-  --moon-color: #fde68a;
-  --star-color: #fef08a;
-  --lotus-color: #f9a8d4;
+  --primary-color: #004d40;  /* deep teal */
+  --accent-color: #26a69a;   /* lighter teal */
+  --moon-color: #ffeb3b;     /* bright yellow */
+  --star-color: #fff59d;     /* soft yellow */
 }
 
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  background: radial-gradient(circle at top, #0f172a 0%, var(--primary-color) 100%);
+  background-image: linear-gradient(135deg, #004d40 0%, #00796b 100%);
   color: var(--moon-color);
   overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
 }
 
 .stars {
@@ -41,22 +42,25 @@ body {
   z-index: 1;
   padding: 4rem 2rem;
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 h1 {
   font-size: 3rem;
   color: var(--moon-color);
+  margin-bottom: 0.2em;
 }
 
 h2 {
   font-size: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   color: var(--accent-color);
 }
 
 p {
   font-size: 1.2rem;
-  color: #fefce8;
+  color: #fffde7;
 }
 
 .project-list {
@@ -69,7 +73,7 @@ p {
 
 .project-list li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid #334155;
+  border-bottom: 1px solid #004d40;
 }
 
 .moon {
@@ -77,21 +81,14 @@ p {
   height: 120px;
   background: var(--moon-color);
   border-radius: 50%;
-  box-shadow: 0 0 50px 15px rgba(253, 230, 138, 0.4);
+  box-shadow: 0 0 40px 15px rgba(255, 235, 59, 0.6);
   margin: 2rem auto;
-}
-
-.lotus {
-  width: 80px;
-  margin: 1rem auto;
-  display: block;
-  filter: drop-shadow(0 0 10px var(--lotus-color));
 }
 
 footer {
   margin-top: 3rem;
   font-size: 0.9rem;
-  color: #94a3b8;
+  color: #b2dfdb;
 }
 
 a {
